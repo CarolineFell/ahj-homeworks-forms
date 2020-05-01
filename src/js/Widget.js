@@ -28,7 +28,8 @@ export default class Widget {
   positionWidget(element) {
     const clickWidget = document.querySelector('#widget');
     clickWidget.classList.toggle('hidden');
-    clickWidget.style.bottom = `${element.offsetTop - element.offsetHeight / 4}px`;
+    clickWidget.style.bottom = `${element.offsetTop - (clickWidget.offsetHeight - element.offsetHeight) / 6}px`;
+    // clickWidget.style.bottom = `${element.offsetTop - clickWidget.offsetHeight / 10}px`;
     clickWidget.style.left = `${element.offsetLeft - (clickWidget.offsetWidth - element.offsetWidth) / 2}px`;
   }
 }

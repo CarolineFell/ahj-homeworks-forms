@@ -38,12 +38,18 @@
   padding: 10px;
 }
 
+.header-widget {
+  background-color: #f4f4f4;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
 .widget::before,
 .widget::after {
   content: "";
   position: absolute;
   border: 10px solid transparent;
-  border-top: 10px solid black;
+  border-top: 10px solid gray;
   bottom: -20px;
   left: calc(50% - 10px);
 }
@@ -52,10 +58,4 @@
   content: "";
   border-top: 10px solid #ffffff;
   bottom: -19px;
-}
-
-.header-widget {
-  background-color: #f4f4f4;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
 }
