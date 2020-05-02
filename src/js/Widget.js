@@ -28,8 +28,15 @@ export default class Widget {
   positionWidget(element) {
     const clickWidget = document.querySelector('#widget');
     clickWidget.classList.toggle('hidden');
-    clickWidget.style.bottom = `${element.offsetTop - (clickWidget.offsetHeight - element.offsetHeight) / 6}px`;
-    // clickWidget.style.bottom = `${element.offsetTop - clickWidget.offsetHeight / 10}px`;
+    clickWidget.style.bottom = `${element.offsetTop + 20}px`;
     clickWidget.style.left = `${element.offsetLeft - (clickWidget.offsetWidth - element.offsetWidth) / 2}px`;
+
+    // const button = document.getElementById('button');
+    // const widget = button.getBoundingClientRect();
+    // console.log(widget)
+    // console.log(element.offsetTop)
+    // console.log(element.offsetLeft)
+    // console.log(element.offsetWidth)
+    // console.log(element.offsetHeight)
   }
 }

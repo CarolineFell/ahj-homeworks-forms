@@ -1,13 +1,13 @@
 import Widget from './Widget';
 
 const button = document.getElementById('button');
-const createWidget = new Widget(
+const widget = new Widget(
   document.body,
   'Popover title',
   'And here`s some amazing content. It`s very engaging. Right?',
 );
-createWidget.bindToDOM();
+widget.bindToDOM();
 
 button.addEventListener('click', () => {
-  createWidget.positionWidget(button);
+  widget.positionWidget(button);
 });
